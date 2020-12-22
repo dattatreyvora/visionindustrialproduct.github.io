@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WELCOME TO VISION INDUSTRIAL PRODUCT</title>
+<link rel="icon" type="image/x-icon" href="favicon.png"/>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	function sendMail()
+	{
+		var cname=document.getElementById("contactname").value;
+		//alert(cname);
+		var email=document.getElementById("email").value;
+		var telno=document.getElementById("telno").value;
+		if(cname=="")
+		{
+			alert("Name of Contact Person cannot be left empty!");
+			return false;
+		}
+		else if(telno=="")
+		{
+			alert("Telephone Number cannot be left empty!");
+			return false;
+		}
+		else if(email=="")
+		{
+			alert("e-mail cannot be left empty!");
+			return false;
+		}
+		var emailRegEx = "^[_a-z0-9+-]+(\.[_a-z0-9+-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$";
+		var phoneRegEx="^[0-9]{10}$";
+		
+		if(!telno.match(phoneRegEx))
+		{
+			alert("Please enter a valid 10-digit telephone number.");
+			return false;
+		}
+		if(!email.match(emailRegEx))
+		{
+			alert("Please enter a valid email address.");
+			return false;
+		}
+		
+		var element_list = document.getElementById("ContactUsForm");
+    	var results ="";
+    
+		for(var p=0;p<element_list.length;p++)
+		{
+			if(element_list[p].type!="button" && element_list[p].type!="submit" && element_list[p].type!="reset" && element_list[p].type!="hidden")
+			{
+				if(results=="")
+				{
+					if(element_list[p].id)
+					{
+						results  = element_list[p].id+"="+element_list[p].value;
+					}
+				}
+				else
+				{
+					if(element_list[p].id)
+					{
+						results += "&"+element_list[p].id+"="+element_list[p].value;
+					}
+				}
+			}
+		}
+		jQuery.ajax({
+            type:'POST',
+            url:'PHPMailer_v5.1/examples/test_smtp_gmail_basic.php',
+            data:results,
+            async:'false',
+            success: function(response)
+			{
+				alert("Email has been sent to the Experts Team");
+			},
+			error: function(XMLHttpRequest,textStatus)
+			{
+				alert("This Operation Could not be Completed. Please check your Internet Connection and try Again. If problem persists please contact Support");
+			}
+   		});
+	}
+</script>
+</head>
+<body>
+<div class="wrapper">
+<div class="full-bg-inner"></div>
+<!--Header Part Start-->
+<div id="header">
+  <div class="top-nevi">
+  
+  <div class="navi">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about-us.html">ABOUT US</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="laboratory.html">LABORATORY INSTRUMENTS</a></li>
+        <li  class="active" style=" padding-right:0px !important">CONTACT US</li>
+      </ul>
+    </div>
+        
+  </div>
+  <div class="main"> <a href="index.html"><div class="logo"></div></a>
+    <div class="welcom">CONTACT US</div>
+  </div>
+</div>
+<!--Header Part End-->
+
+<!--Middle Part Start-->
+<div id="middle2">
+
+<div class="inner-container">
+
+<div class="inner-navi">
+<ul>
+<li class="active">CONTACT US</li>
+<li>&raquo;</li>
+<li><a href="index.html">HOME</a></li>
+</ul>
+</div>
+
+<div class="inner-part-width">
+<div class="container-div">
+<div class="left-block-contant">
+  <div class="inner-block-contant">
+    <h3>Contact us</h3>
+    <div class="hrline"></div>
+
+   <div class="contactform">
+ <div class="fulldiv">
+              <form method="post" id="ContactUsForm" name="ContactUsForm">
+                <div class="fulldiv">
+                  <div class="form-text">Select Products:</div>
+                  <div class="right-textbox">
+                    <select name="require" class="textarea-con" id="category">
+						<option value="select" selected="selected">Select</option>
+						<option value="SENSORS">SENSORS</option>
+						<option value="CONTROLLERS">CONTROLLERS</option>
+						<option value="DATA LOGGERS &amp; SCANNERS">DATA LOGGERS &amp; SCANNERS</option>
+						<option value="LABORATORY INSTRUMENTS">LABORATORY INSTRUMENTS</option>
+						<option value="HEATERS">HEATERS</option>
+						<option value="SOLID STATE RELAY">SOLID STATE RELAY</option>
+						<option value="WEIGHING SCALE">WEIGHING SCALE</option>
+						<option value="PUMPS">PUMPS</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="fulldiv">
+                  <div class="form-text">Name of Company :</div>
+                  <div class="right-textbox">
+                    <label>
+                      <input name="formelement" id="companyname" type="text" class="textarea-con"  size="46" />
+                    </label>
+                  </div>
+                </div>
+                <div class="fulldiv">
+                  <div class="form-text">Name of Contact Person<span style="color:red;">*</span> :</div>
+                  <div class="right-textbox">
+                    <label>
+                      <input name="formelement" id="contactname" type="text" class="textarea-con"  size="46" />
+                    </label>
+                  </div>
+                </div>
+                <div class="fulldiv">
+                  <div class="form-text">Designation : </div>
+                  <div class="right-textbox">
+                    <label>
+                      <input name="formelement" id="designation" type="text" class="textarea-con"  size="46" />
+                    </label>
+                  </div>
+                </div>
+                <div class="fulldiv">
+                  <div class="form-text">Email<span style="color:red;">*</span> :</div>
+                  <div class="right-textbox">
+                    <label>
+                      <input name="formelement" id="email" type="text" class="textarea-con"  size="46" />
+                    </label>
+                  </div>
+                </div>
+                <div class="fulldiv">
+                  <div class="form-text">Tel. No.<span style="color:red;">*</span> : </div>
+                  <div class="right-textbox">
+                    <label>
+                      <input name="formelement" id="telno" type="text" class="textarea-con"  size="46" />
+                    </label>
+                  </div>
+                </div>
+
+                <div class="fulldiv">
+                  <div class="form-text">Address :</div>
+                  <div class="right-textbox">
+                    <label>
+                      <textarea size="46" class="textarea-con" type="text" id="address" name="formelement"></textarea></label>
+                  </div>
+                </div>
+                <div class="fulldiv">
+                  <div class="form-text">City :</div>
+                  <div class="right-textbox">
+                    <label>
+                      <input name="city" id="mobile" type="text" class="textarea-con"  size="46" />
+                    </label>
+                  </div>
+                </div>
+                 <div class="fulldiv">
+                  <div class="form-text">Country :</div>
+                  <div class="right-textbox">
+                    <label>
+                      <input name="formelement" id="country" type="text" class="textarea-con"  size="46" />
+                    </label>
+                  </div>
+                </div>
+                
+                <div class="fulldiv">
+                  <div class="form-text">Requirements Details : </div>
+                  <div class="right-textbox">
+                    <label>
+                      <textarea size="46" class="textarea-con" type="text" id="reqdet" name="formelement"></textarea></label>
+                  </div>
+                </div>
+                
+                </form>
+                <input name="" type="button" value="Submit" class="button-contact" onclick="sendMail();"/>
+</div>
+</div>
+
+  </div>
+  </div>
+  
+  <div class="right-nevi-bg" style="min-height:707px;">
+  
+  
+  <div style="float:left; width:235px;">
+<!--<iframe style="margin-top:0px; margin:10px 10px; border:1px solid #ccc" width="235" scrolling="no" height="230" frameborder="0" title="Dignizant Technologies" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=diamond+world+surat&amp;aq=&amp;sll=21.229786,72.899394&amp;sspn=0.011281,0.026071&amp;ie=UTF8&amp;hq=diamond+world&amp;hnear=Surat,+Gujarat,+India&amp;cid=2220318314036745327&amp;ll=21.211585,72.850763&amp;spn=0.028005,0.036478&amp;z=14&amp;iwloc=A&amp;output=embed" marginwidth="0" marginheight="0"></iframe>-->
+<iframe style="margin-top:0px; margin:10px 10px; border:1px solid #ccc" width="235" scrolling="no" height="230" frameborder="0" src="http://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Rakhial++Road,+Rakhial.&amp;aq=&amp;sll=23.02426,72.621775&amp;sspn=0.006843,0.013078&amp;ie=UTF8&amp;hq=&amp;hnear=Rakhial+Rd,+Rakhial,+Ahmedabad,+Gujarat&amp;ll=23.022173,72.617268&amp;spn=0.013686,0.026157&amp;t=m&amp;z=14&amp;output=embed"></iframe><br /><small><a href="http://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Rakhial++Road,+Rakhial.&amp;aq=&amp;sll=23.02426,72.621775&amp;sspn=0.006843,0.013078&amp;ie=UTF8&amp;hq=&amp;hnear=Rakhial+Rd,+Rakhial,+Ahmedabad,+Gujarat&amp;ll=23.022173,72.617268&amp;spn=0.013686,0.026157&amp;t=m&amp;z=14" style="color:#0000FF;text-align:left"></a></small></iframe><br />
+<div>
+  
+ 
+ 
+  
+  
+    <div class="address">
+<h4>Address :</h4>
+<p>Vision Industrial Product,<br/>20, 3rd floor,<br/>Barcelona commercial Complex,<br/>S.P. Ring Road, Odhav circle,<br/>Odhav ,Ahmedabad-382415. </p>
+
+
+<h4>Phone: </h4>
+<p>09624480901 , 07874910091</p>
+
+<h4>Email: </h4>
+<p><a href="mailto:sales@visionindustrialproduct.com" style="color:#fff;font-family:'FlamaSemicondensedBook';font-size:15px;">sales@visionindustrialproduct.com</a></p>
+
+
+
+</div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--Middle Part End-->
+ <!--Footer Part Start-->
+ <div class="footer">
+		 <div class="footer-width">
+		
+				<div class="footer-left">
+					<a href="index.html"><div class="footer-logo"></div></a><br />
+					<div class="copyright"><span>Copyright © 2012 Vision Industrial, All Rights Reserved.</span></div>
+				</div>
+				
+				<div class="footer-navigation">
+						<ul class="footer-nav">
+							  <li><a href="index.html">HOME</a></li>
+							  <li>/</li>
+							  <li><a href="about-us.html">ABOUT US</a></li>
+							  <li>/</li>
+							  <li><a href="products.html">PRODUCTS</a></li>
+							  <li>/</li>
+							  <li><a href="laboratory.html">LABORATORY INSTRUMENTS</a></li>
+							  <li>/</li>
+							  <li><a href="contact-us.html">CONTACT</a></li>
+						 </ul>
+						  <br/>
+						<p class="powered">Powered By :<span class="design-by"> www.zerodesigns.in</span></p>
+				</div>
+		</div>
+  </div>
+ <!--Footer Part End--> 
+</div>
+</body>
+</html>

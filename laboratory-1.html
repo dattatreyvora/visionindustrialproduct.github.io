@@ -1,0 +1,1371 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WELCOME TO VISION INDUSTRIAL PRODUCT</title>
+<link rel="icon" type="image/x-icon" href="favicon.png"/>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<script src="js/jquery-1.5.2.min.js" type="text/javascript"></script>
+
+<!--  jCarousel facebook  -->
+
+	<script language="JavaScript">
+	
+			function gup( name )
+			{
+				name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+				var regexS = "[\\?&]"+name+"=([^&#]*)";
+				var regex = new RegExp( regexS );
+				var results = regex.exec( window.location.href );
+								
+				if( results == null){
+					return "";
+				}
+				else
+				return results[1];
+				alert(results[1]);
+			}
+			
+			//here you place the ids of every element you want.
+			var ids=new Array('a1','a2','a3','a4','a5','a6','a7','a8','a9','a10','a11','a12');
+			var menu_ids=new Array('active1','active2','active3','active4','active5','active6','active7','active8','active9','active10','active11','active12');
+
+			function switchid(id,menuid){	
+				hideallids();
+				showdiv(id,menuid);
+			}
+
+			function hideallids(){
+				//loop through the array and hide each element by id
+				for (var i=0;i<ids.length;i++){
+					hidediv(ids[i]);
+					$('#'+menu_ids[i]).removeClass('sidemenuactive');
+
+				}		  
+			}
+
+			function hidediv(id) {
+				//safe function to hide an element with a specified id
+				if (document.getElementById) { // DOM3 = IE5, NS6
+					document.getElementById(id).style.display = 'none';
+				}
+				else {
+					if (document.layers) { // Netscape 4
+						document.id.display = 'none';
+					}
+					else { // IE 4
+						document.all.id.style.display = 'none';
+					}
+				}
+			}
+
+			function showdiv(id,menuid) {
+				//safe function to show an element with a specified id
+					  
+				if (document.getElementById) { // DOM3 = IE5, NS6
+					document.getElementById(id).style.display = 'block';
+				}
+				else {
+					if (document.layers) { // Netscape 4
+						document.id.display = 'block';
+					}
+					else { // IE 4
+						document.all.id.style.display = 'block';
+					}
+				}
+				document.getElementById(menuid).className = 'sidemenuactive';
+			}
+			
+			
+window.onload=function(){
+	divid=gup('param');
+	if(divid==""){
+		divid=1;
+	}
+	
+	switchid("a"+divid,"active"+divid);
+}
+		</script>
+
+
+</head>
+<style type="text/css">
+table
+{
+border-collapse:collapse;
+}
+table, td, th
+{
+border:1px solid #CCC;
+PADDING-LEFT:5PX;
+background-color: #FFFFFF;
+}
+th {BACKGROUND-COLOR:#666;COLOR:#FFF; height:25PX;}
+</style>
+<body>
+<div class="wrapper">
+<div class="full-bg-inner"></div>
+<!--Header Part Start-->
+<div id="header">
+  <div class="top-nevi">
+  
+  <div class="navi">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about-us.html">ABOUT US</a></li>
+        <li><a href="productsmain.html">PRODUCTS</a></li>
+        <li style=" padding-right:0px !important"><a href="contact-us.html">CONTACT US</a></li>
+      </ul>
+    </div>
+        
+  </div>
+  <div class="main"> <a href="index.html"><div class="logo"></div></a>
+    <div class="welcom">LABORATORY INSTRUMENTS</div>
+  </div>
+</div>
+<!--Header Part End-->
+
+<!--Middle Part Start-->
+<div id="middle2">
+
+<div class="inner-container">
+
+<div class="inner-navi">
+<ul>
+
+<li class="active">LABORATORY INSTRUMENTS</li>
+<li>&raquo;</li>
+<li><a href="productsmain.html">PRODUCTS HOME</a></li>
+</ul>
+</div>
+
+<div class="inner-part-width">
+<div class="container-div">
+
+<div  class="left-block-contant">
+
+   
+ <div id='a1' style="display:block;" class="inner-block-contant">
+    <h3>Auto Clave</h3>
+    <div class="hrline"></div>
+
+        <div class="slideshow">
+          <ul>
+              <li><img src="images/laboratory/large-01.jpg" alt="" /></li>
+          </ul>
+		</div>
+                
+    <div class="pro-detail">
+    <h4>Autoclave</h4>
+<p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <td width="26%"><p>Features</p></td>
+    <td width="74%"><p>a) Steam Temp. 121.4 oC at 15 psi. </p></td>
+  </tr>
+  <tr>
+    <td width="26%"><p>Specification </p></td>
+    <td width="74%"><p>As per BS 2646-5:1993. Autoclaves for sterilization in    laboratories Methods of Test for function and performance.&nbsp;<br />
+      <br />
+      The Energy from the water is transferred into high pressure steam inside the    Stainless steel chamber up to 15-psi pressure or 121.4oC temperature. The    Chamber (electrical) is fill with clean water for sterilization. This heat    process generated chemical free steam for sterilization.&nbsp; </p></td>
+  </tr>
+  <tr>
+    <td width="26%"><p>Temp Controller </p></td>
+    <td width="74%"><p>PID (Optional: Combined Temp. Pressure &amp; water level    Controller)</p></td>
+  </tr>
+  <tr>
+    <td width="26%"><p>Pressure Controller </p></td>
+    <td width="74%"><p>Mechanically operated pressure/steam release valve. </p></td>
+  </tr>
+  <tr>
+    <td width="26%"><p>Pressure Gauge </p></td>
+    <td width="74%"><p>Analog Dial type Pressure Gauge&nbsp;(Optional: Digital Pressure    Meter)</p></td>
+  </tr>
+  <tr>
+    <td width="26%"><p>Temperature Sensor </p></td>
+    <td width="74%"><p>Standard coupling type PT 100 Sensor </p></td>
+  </tr>
+  <tr>
+    <td width="26%"><p>Heat Exchanger </p></td>
+    <td width="74%"><p>The electrical heat exchanger transfer latent heat to the clean    fill water to generated steam under pressure.&nbsp; </p></td>
+  </tr>
+  <tr>
+    <td width="26%"><p>Water Level Control </p></td>
+    <td width="74%"><p>Low water level cut off electronic circuit protects the    electrical heat exchanger from low water level inside the chamber, this Cut's    off the power supply to the heat exchanger. </p></td>
+  </tr>
+  <tr>
+    <td width="26%"><p>Steam Outlet </p></td>
+    <td width="74%"><p>Steam generated from the unit is raised and exits thought the    electrically operated steam Purging solenoid valve from the outlet </p></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<table border="0" cellspacing="0" cellpadding="0" align="left" width="100%">
+   <tr>
+    <th colspan="6">Models</th>
+  </tr>
+  <tr>
+    <td width="22%"><p align="center">Capacity </p></td>
+    <td width="16%"><p align="center">35 ltrs </p></td>
+    <td width="16%"><p align="center">52 ltrs </p></td>
+    <td width="16%"><p align="center">119 ltrs </p></td>
+    <td width="16%"><p align="center">178 ltrs </p></td>
+    <td width="14%"><p align="center">213 ltrs </p></td>
+  </tr>
+  <tr>
+    <td width="22%"><p align="center">Inner    Size </p></td>
+    <td width="16%"><p align="center">30 dia X    50 h </p></td>
+    <td width="16%"><p align="center">35 dia X    55 h </p></td>
+    <td width="16%"><p align="center">40 dia X    75 h </p></td>
+    <td width="16%"><p align="center">55 dia X    75 h </p></td>
+    <td width="14%"><p align="center">55 dia X    90 h </p></td>
+  </tr>
+  <tr>
+    <td width="22%"><p align="center">Inner    Chamber </p></td>
+    <td width="78%" colspan="5"><p align="center">Stainless    Steel 304 quality </p></td>
+  </tr>
+  <tr>
+    <td width="22%"><p align="center">External </p></td>
+    <td width="78%" colspan="5"><p align="center">Stainless    Steel 304 quality </p></td>
+  </tr>
+  <tr>
+    <td width="22%"><p align="center">Range </p></td>
+    <td width="78%" colspan="5"><p align="center">Ambient    to 15 psi pressure / 121.40C </p></td>
+  </tr>
+  <tr>
+    <td width="22%"><p align="center">Controller </p></td>
+    <td width="78%" colspan="5"><p>PID (Optional: Combined Temp. Pressure &amp; water level    Controller)</p></td>
+  </tr>
+  <tr>
+    <td width="22%"><p align="center">Sensor&nbsp; </p></td>
+    <td width="78%" colspan="5"><p align="center">PT 100 </p></td>
+  </tr>
+  <tr>
+    <td width="22%"><p align="center">Accuracy </p></td>
+    <td width="78%" colspan="5"><p align="center">+/-1.oC </p></td>
+  </tr>
+  <tr>
+    <td width="22%"><p align="center">Uniformity </p></td>
+    <td width="78%" colspan="5"><p align="center">+/-0.5oC </p></td>
+  </tr>
+  <tr>
+    <td width="22%"><p align="center">Max. Ramp    up time </p></td>
+    <td width="78%" colspan="5"><p align="center">45 min.    up to 121.40C without load with respect to ambient&nbsp; </p></td>
+  </tr>
+  <tr>
+    <td width="22%"><p align="center">Insulation&nbsp; </p></td>
+    <td width="78%" colspan="5"><p align="center">Air Bank    50 mm </p></td>
+  </tr>
+  <tr>
+    <td width="22%"><p align="center">Top    Lid&nbsp; </p></td>
+    <td width="78%" colspan="5"><p align="center">With Dome    Shape Die press Stainless Steel Plate </p></td>
+  </tr>
+  <tr>
+    <td width="100%" colspan="6"><p align="center"><strong>Optional</strong></p></td>
+  </tr>
+  <tr>
+    <td width="22%"><p align="center">Printer Output </p></td>
+    <td width="78%" colspan="5"><p align="center">Printer output port RS232 </p></td>
+  </tr>
+  <tr>
+    <td width="22%"><p align="center">Validation Facility&nbsp; </p></td>
+    <td width="78%" colspan="5"><p align="center">Data logging facility for temperature validation report. </p></td>
+  </tr>
+  <tr>
+    <td width="22%"><p align="center">Capacity    (Watts) </p></td>
+    <td width="16%"><p align="center">2000 </p></td>
+    <td width="16%"><p align="center">3000 </p></td>
+    <td width="16%"><p align="center">4000 </p></td>
+    <td width="16%"><p align="center">5000 </p></td>
+    <td width="14%"><p align="center">6000 </p></td>
+  </tr>
+  <tr>
+    <td width="22%"><p align="center">Power Consumption </p></td>
+    <td width="16%"><p align="center">10 amps </p></td>
+    <td width="16%"><p align="center">15 amps </p></td>
+    <td width="16%"><p align="center">20 amps </p></td>
+    <td width="16%"><p align="center">25 amps </p></td>
+    <td width="14%"><p align="center">30 amps </p></td>
+  </tr>
+  <tr>
+    <td width="22%"><p align="center">Net Weight approx. </p></td>
+    <td width="16%"><p align="center">15kgs </p></td>
+    <td width="16%"><p align="center">20kgs </p></td>
+    <td width="16%"><p align="center">30kgs </p></td>
+    <td width="16%"><p align="center">50kgs </p></td>
+    <td width="14%"><p align="center">55kgs </p></td>
+  </tr>
+  <tr>
+    <td width="100%" colspan="6"><p>Electric requirements AC230 V &amp; 50Hz cycle. </p></td>
+  </tr>
+</table>
+</p>
+
+    </div>
+  </div>
+  
+  
+ <div id='a2' style="display:none;" class="inner-block-contant">
+    <h3>Bod Shaker</h3>
+    <div class="hrline"></div>
+
+ <div class="slideshow">
+						<ul>
+							<li><img src="images/laboratory/large-02.jpg" alt="" /></li>
+						</ul>
+				</div>
+                
+    <div class="pro-detail">
+    <h4>Bod Shaker</h4>
+<p>
+<table border="1" cellspacing="0" cellpadding="0" width="100%">
+  
+  <tr>
+    <td width="144" valign="top"><p>Temperature Range</p></td>
+    <td width="132" valign="top"><p>Amb+5º C to 60º C</p></td>
+    <td width="130" valign="top"><p>5º C to 60º C</p></td>
+    <td width="143" valign="top"><p>Amb+5º C to 60º C</p></td>
+    <td width="154" valign="top"><p>5º C to 60º C</p></td>
+  </tr>
+  <tr>
+    <td width="144" valign="top"><p>Temp Accuracy</p></td>
+    <td width="132" valign="top"><p>± 0.5ºC</p></td>
+    <td width="130" valign="top"><p>± 0.5ºC</p></td>
+    <td width="143" valign="top"><p>± 0.5ºC</p></td>
+    <td width="154" valign="top"><p>± 0.5ºC</p></td>
+  </tr>
+  <tr>
+    <td width="144" valign="top"><p>Temp Control</p></td>
+    <td width="132" valign="top"><p>Micro controller</p></td>
+    <td width="130" valign="top"><p>Micro controller</p></td>
+    <td width="143" valign="top"><p>PLC controller</p></td>
+    <td width="154" valign="top"><p>PLC &nbsp;controller</p></td>
+  </tr>
+  <tr>
+    <td width="144" valign="top"><p>Standard platform Size</p></td>
+    <td width="132" valign="top"><p>420x420 mm</p></td>
+    <td width="130" valign="top"><p>420x420 mm</p></td>
+    <td width="143" valign="top"><p>420x420 mm</p></td>
+    <td width="154" valign="top"><p>4420x420mm</p></td>
+  </tr>
+  <tr>
+    <td width="144" valign="top"><p>Max. Capacity</p></td>
+    <td width="132" valign="top"><p>1000 ml</p></td>
+    <td width="130" valign="top"><p>1000 ml</p></td>
+    <td width="143" valign="top"><p>1000 ml</p></td>
+    <td width="154" valign="top"><p>1000 ml</p></td>
+  </tr>
+  <tr>
+    <td width="144" valign="top"><p>Shaking Speed</p></td>
+    <td width="132" valign="top"><p>30-400 RPM</p></td>
+    <td width="130" valign="top"><p>30-400 RPM</p></td>
+    <td width="143" valign="top"><p>30-400 RPM</p></td>
+    <td width="154" valign="top"><p>30-400 RPM</p></td>
+  </tr>
+  <tr>
+    <td width="144" valign="top"><p>Shaking Motion</p></td>
+    <td width="132" valign="top"><p>Orbital</p></td>
+    <td width="130" valign="top"><p>Orbital</p></td>
+    <td width="143" valign="top"><p>Orbital</p></td>
+    <td width="154" valign="top"><p>Orbital</p></td>
+  </tr>
+  <tr>
+    <td width="144" valign="top"><p>Shaking Amplitude</p></td>
+    <td width="132" valign="top"><p>25 mm</p></td>
+    <td width="130" valign="top"><p>25 mm</p></td>
+    <td width="143" valign="top"><p>25 mm</p></td>
+    <td width="154" valign="top"><p>25 mm</p></td>
+  </tr>
+</table></p>
+
+<p>
+<span>The important components of our incubator shakers are cited below:</span><br />
+•	PID controller for internal temperature control with variation within ± 0.5° C<br />
+•	Unique air flow system for even temperature distribution<br />
+•	Temperature stability and reduced energy consumption through foamed - in place CFC free PUF insulation<br />
+•	Triple eccentric drive ensures long life and smooth operation<br />
+•	Maintenance-free PMDC motor<br />
+•	Stainless steel inner chamber<br />
+•	Audio visual alarm for controlling temperature and RPM deviation from the set value<br /><br />
+
+<span>Some of the details regarding construction of cabinet and refrigeration system are:</span><br />
+•	Cabinet insulated with high density CFC free poly urethane foam<br />
+•	Interior of chambers is fabricated using mirror finish stainless steel Chamber exterior made of white powder coated mild steel<br />
+•	Door provided with magnetic gasket and a keyed door lock<br />
+•	Inside storage facilitated through stainless steel trays<br />
+•	Hermitically sealed compressor for superior cooling<br />
+•	GMP models also available in total stainless steel body (Inside S. S 316 with mirror finished and outside S 304 dull finish)<br />
+
+</p>
+
+<p>
+<table border="1" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td width="284" valign="top"><p>Shaking Assembly</p></td>
+    <td width="284" valign="top"><p>Electric pulley mechanism</p></td>
+  </tr>
+  <tr>
+    <td width="284" valign="top"><p>Platform</p></td>
+    <td width="284" valign="top"><p>Adjustable stainless Steel</p></td>
+  </tr>
+  <tr>
+    <td width="284" valign="top"><p>Flask Holder</p></td>
+    <td width="284" valign="top"><p>Spring type clamp arrangement </p></td>
+  </tr>
+  <tr>
+    <td width="284" valign="top"><p>Digital RPM Indicator</p></td>
+    <td width="284" valign="top"><p>50 to 250 RPM or Customized  (Regulator Controlled)</p></td>
+  </tr>
+  <tr>
+    <td width="284" valign="top"><p>Stroke</p></td>
+    <td width="284" valign="top"><p>25 to30 mm displacement</p></td>
+  </tr>
+  <tr>
+    <td width="284" valign="top"><p>Shaking Motion</p></td>
+    <td width="284" valign="top"><p>Orbital</p></td>
+  </tr>
+</table>
+</p>
+
+    </div>
+  </div>
+  
+
+<div id='a3' style="display:none;" class="inner-block-contant">
+    <h3>Hot air oven</h3>
+    <div class="hrline"></div>
+
+ <div class="slideshow">
+						<ul>
+							<li><img src="images/laboratory/large-03.jpg" alt="" /></li>
+						</ul>
+				</div>
+                
+    <div class="pro-detail">
+    <h4>Hot air oven</h4>
+<p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <th valign="top">Inner Size Size in Inches (W X D X H)</th>
+    <th valign="top">No.of Shelves</th>
+    <th valign="top">Capacity In LTR</th>
+    <th valign="top">Rating Watts</th>
+  </tr>
+  <tr>
+    <td valign="top"><p>12&quot;x12&quot;x12&quot; </p></td>
+    <td valign="top"><p>1 </p></td>
+    <td valign="top"><p>27 </p></td>
+    <td valign="top"><p>800 </p></td>
+  </tr>
+  <tr>
+    <td valign="top"><p>14&quot;x14&quot;x14&quot; </p></td>
+    <td valign="top"><p>2 </p></td>
+    <td valign="top"><p>42 </p></td>
+    <td valign="top"><p>1200 </p></td>
+  </tr>
+  <tr>
+    <td valign="top"><p>18&quot;x18&quot;x18&quot; </p></td>
+    <td valign="top"><p>3 </p></td>
+    <td valign="top"><p>90 </p></td>
+    <td valign="top"><p>2000 </p></td>
+  </tr>
+  <tr>
+    <td valign="top"><p>18&quot;x18&quot;x24&quot; </p></td>
+    <td valign="top"><p>4 </p></td>
+    <td valign="top"><p>120 </p></td>
+    <td valign="top"><p>2500 </p></td>
+  </tr>
+  <tr>
+    <td valign="top"><p>24&quot;x24X&quot;24&quot; </p></td>
+    <td valign="top"><p>4 </p></td>
+    <td valign="top"><p>215 </p></td>
+    <td valign="top"><p>3000 </p></td>
+  </tr>
+  <tr>
+    <td valign="top"><p>24&quot;x24&quot;x36&quot; </p></td>
+    <td valign="top"><p>5 </p></td>
+    <td valign="top"><p>320 </p></td>
+    <td valign="top"><p>3500 </p></td>
+  </tr>
+</table>
+</p>
+
+<p>
+•	Triple walled Unit.<br /> 
+•	Inner chamber made of S.S.304 <br />
+•	Outer chamber of Mild Steel with Powder coating. <br />
+•	Gap Between the two walls filled with glass wool insulation to avoid heat loses of 65 mm <br />
+•	Heating element Are Made of high grade chrome plated nichrome wire. <br />
+•	Heaters are placed ate the right &amp; left side of the inner chamber <br />
+•	Air Ventilation is placed on top of both sides to remove heat gases and fumes. <br />
+•	Control Switch &amp; pilot lamps are fitted on front panel <br />
+•	Supplied with G.I. Wire mesh Jali. <br />
+•	PID controller for internal temperature control with variation within ± 0.5° C<br />
+
+</p>
+
+
+    </div>
+  </div>
+  
+  
+<div id='a4' style="display:none;" class="inner-block-contant">
+    <h3>Humidity chamber</h3>
+    <div class="hrline"></div>
+
+ <div class="slideshow">
+						<ul>
+							<li><img src="images/laboratory/large-04.jpg" alt="" /></li>
+						</ul>
+				</div>
+                
+    <div class="pro-detail">
+    <h4>Humidity chamber</h4>
+<p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <th width="67">CAPACITY </<th>
+    <th width="67">INTERNAL<br />DIMENSION<br />W&nbsp;    X D&nbsp; X H&nbsp; [cms ]</th>
+    <th width="69">EXTERNAL DIMENSION<br />W&nbsp;&nbsp;    X&nbsp; D&nbsp; X&nbsp; H [cms]</th>
+    <th width="46">SHELVES </th>
+  </tr>
+  <tr>
+    <td width="67" valign="top"><p>&nbsp;    4 Cu.Ft.&nbsp; [120 Ltrs] </p></td>
+    <td width="67" valign="top"><p>45&nbsp;    x&nbsp; 45&nbsp; x&nbsp; 60 </p></td>
+    <td width="69" valign="top"><p>64 X    97 X 140 </p></td>
+    <td width="46" valign="top"><p>02 </p></td>
+  </tr>
+  <tr>
+    <td width="67" valign="top"><p>&nbsp;    6 Cu.Ft.&nbsp; [165 Ltrs] </p></td>
+    <td width="67" valign="top"><p>50&nbsp;    x&nbsp; 50&nbsp; x&nbsp; 70 </p></td>
+    <td width="69" valign="top"><p>69 X    102 X 150 </p></td>
+    <td width="46" valign="top"><p>02 </p></td>
+  </tr>
+  <tr>
+    <td width="67" valign="top"><p>10    Cu.Ft.&nbsp; [ 280 Ltrs]&nbsp;&nbsp;&nbsp; </p></td>
+    <td width="67" valign="top"><p>55&nbsp;    x&nbsp; 55&nbsp; x&nbsp; 90 </p></td>
+    <td width="69" valign="top"><p>74 X    107 X 170 </p></td>
+    <td width="46" valign="top"><p>03 </p></td>
+  </tr>
+  <tr>
+    <td width="67" valign="top"><p>12    Cu.Ft.&nbsp; [ 324 Ltrs] </p></td>
+    <td width="67" valign="top"><p>60&nbsp;    x&nbsp; 60&nbsp; x&nbsp; 90 </p></td>
+    <td width="69" valign="top"><p>79 X    112 X 170 </p></td>
+    <td width="46" valign="top"><p>03 </p></td>
+  </tr>
+  <tr>
+    <td width="67" valign="top"><p>16    Cu.Ft.&nbsp; [ 440 Ltrs] </p></td>
+    <td width="67" valign="top"><p>60&nbsp;    x&nbsp; 60&nbsp; x 125 </p></td>
+    <td width="69" valign="top"><p>79 X    112 X 205 </p></td>
+    <td width="46" valign="top"><p>04 </p></td>
+  </tr>
+  <tr>
+    <td width="67" valign="top"><p>29    Cu.Ft.&nbsp; [ 800 Ltrs] </p></td>
+    <td width="67" valign="top"><p>80&nbsp;    x&nbsp; 80&nbsp; x 125 </p></td>
+    <td width="69" valign="top"><p>99 X    132 X 205 </p></td>
+    <td width="46" valign="top"><p>05 </p></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<span>TEMPERATURE RANGE :</span> 10°c to 60°c <br />
+<span>TEMPERATURE ACCURACY :</span>± 0.1°c <br /> 
+<span>TEMPERATURE UNIFORMITY :</span>± 0.5° c <br />
+
+<span>HUMIDITY RANGE  :</span> 40% to 95% RH<br />
+<span>HUMIDITY ACCURACY :</span>	±  5% RH<br />
+<span>HUMIDITY UNIFORMITY :</span>	±  3% RH<br /><br />
+
+<span>OPTIONAL TECHNICAL SPECIFICATIONS : </span><br />
+Material of Construction: Inside S.S. &amp; Outside S.S. Inside S.S. &amp; Outside GI Powder Coat Finish. <br />
+Humidity Range : 40% RH to 98% RH <br />
+Temp. Range #  : 100C to 600C <br />
+Accuracy Temp. / RH  : + 0.20C &amp; + 3% RH <br />
+Low temp. Range: -250C / -150C / -100C &amp; 00C &amp; 35% RH on request.)<br /> 
+
+Same as above but with PC software &amp; connectivity
+
+</p>
+
+
+    </div>
+  </div>
+
+  
+<div id='a5' style="display:none;" class="inner-block-contant">
+    <h3>Laboratory stirrer</h3>
+    <div class="hrline"></div>
+
+ <div class="slideshow">
+						<ul>
+							<li><img src="images/laboratory/large-07.jpg" alt="" /></li>
+						</ul>
+				</div>
+                
+    <div class="pro-detail">
+    <h4>Laboratory stirrer</h4>
+<p>
+<span>Laboratory Stirrer :</span><br />
+ Make “Galaxy”: Overhead Stirrer for liquid material stirring: Day &amp; night use, small but high torque, compact, does not allow corrosive fume inside the motor, noiseless, remains all time cool, reverse forward facility, low speed constant stirring, trouble free, long lasting and maintenance free, no carbon brush wear &amp; tear in years to come. Stirrers are as good as flame proof, consumes low electricity, no shock hazard, withstand any voltage fluctuation, runs on 230-volt single phase AC supply to regulator box. Regulator box converts 230 Volt into low Volt DC because Motor runs on low Volt D.C., Supplied with variable speed remote control regulator box.
+</p>
+
+<p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td><p>Model No</p></td>
+    <td><p>Torque equi H.P</p></td>
+    <td><p>Variable RPM</p></td>
+    <td><p>Power consump Watt</p></td>
+    <td><p>Stirring capacity in Ltrs With 4” single blade</p></td>
+    <td><p>&nbsp;</p></td>
+    <td><p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td><p>&nbsp;</p></td>
+    <td><p>1/8</p></td>
+    <td><p>60 to 500</p></td>
+    <td><p>35</p></td>
+    <td><p>5</p></td>
+    <td><p>10</p></td>
+    <td><p>20</p></td>
+  </tr>
+  <tr>
+    <td><p>&nbsp;</p></td>
+    <td><p>1/6</p></td>
+    <td><p>60 to 500</p></td>
+    <td><p>50</p></td>
+    <td><p>10</p></td>
+    <td><p>20</p></td>
+    <td><p>50</p></td>
+  </tr>
+  <tr>
+    <td><p>&nbsp;</p></td>
+    <td><p>1/4</p></td>
+    <td><p>60 to 500</p></td>
+    <td><p>70</p></td>
+    <td><p>20</p></td>
+    <td><p>50</p></td>
+    <td><p>100</p></td>
+  </tr>
+</table>
+</p>
+
+<p>
+On demand maximum RPM 1500 or 3000 available without any change in price.
+<br />
+Available in price with stand &amp; without stand. Also available in RPM Display.
+</p>
+
+<p>
+<span>Laboratory Stirrer ( Gear Reduction ):</span><br />
+ Overhead Stirrer for liquid material stirring: Day &amp; night use, small but high torque, compact, does not allow corrosive fume inside the motor, noiseless, remains all time cool, reverse forward facility, low speed constant stirring, trouble free, long lasting and maintenance free, no carbon brush wear &amp; tear in years to come. Stirrers are as good as flame proof, consumes low electricity, no shock hazard, withstand any voltage fluctuation, runs on 230-volt single phase AC supply to regulator box. Regulator box converts 230 Volt into low Volt DC because Motor runs on low Volt D.C., Supplied with variable speed remote control regulator box.
+</p>
+
+<p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td width="55"><p>Model No</p></td>
+    <td width="55"><p>Torque Equivalent to HP</p></td>
+    <td width="55"><p>Variable RPM Gear Reduction</p></td>
+    <td width="55"><p>Consumtion Watts</p></td>
+    <td width="97"><p>Stirring capacity in ltrs. Viscous</p></td>
+  </tr>
+  <tr>
+    <td><p>3 A(G)</p></td>
+    <td><p>1/8</p></td>
+    <td><p>40 to 500</p></td>
+    <td><p>70</p></td>
+    <td><p>5 to 10</p></td>
+  </tr>
+  <tr>
+    <td><p>4 A(G)</p></td>
+    <td><p>1/6</p></td>
+    <td><p>40 to 500</p></td>
+    <td><p>90</p></td>
+    <td><p>10 to 20</p></td>
+  </tr>
+  <tr>
+    <td><p>6 A(G)</p></td>
+    <td><p>1/4</p></td>
+    <td><p>40 to 300</p></td>
+    <td><p>120</p></td>
+    <td><p>20 to 50</p></td>
+  </tr>
+</table>
+</p>
+
+    </div>
+  </div>
+  
+  
+<div id='a6' style="display:none;" class="inner-block-contant">
+    <h3>Laminar Air flow</h3>
+    <div class="hrline"></div>
+
+ <div class="slideshow">
+						<ul>
+							<li><img src="images/laboratory/large-05.jpg" alt="" /></li>
+						</ul>
+				</div>
+                
+    <div class="pro-detail">
+    <h4>Laminar Air flow</h4>
+<p>
+Working area Size 90 x 60 x 60 cm.<br /> 
+Working area Size 120 x 60 x 60 cm. <br />
+Working area Size 180 x 60 x 60 cm. <br /><br />
+
+Laminar Air Flow (Vertical) complete S.S.	60x60x60cm <br />
+Laminar Air Flow (Vertical) complete S.S.	90x60x60cm <br />
+Laminar Air Flow (Vertical) complete S.S.	120x60x60cm <br /><br />
+
+Direction of Flow: Horizontal<br /><br />
+
+•	Direction of flow: Horizontal <br />
+•	Cleanliness: CLASS 100 <br />
+•	Velocity: 90 FPM + / -20% <br />
+•	Hepa Filter: Size and QTY. will depend on the Size selected <br />
+•	Particle retention: Above 0. 3 micron <br />
+•	Blower Assembly: 1 / 3 HP, 1440 RPM <br />
+•	Noise level: 65 decibel + / -5% <br />
+•	Rate of air flow: 0. 40 to 0. 75 M / Sec. (90 FPM) <br />
+Vibration level: < 2. 5 micron<br />
+
+</p>
+
+
+    </div>
+  </div>  
+    
+
+<div id='a7' style="display:none;" class="inner-block-contant">
+    <h3>Magnatic Stirriar</h3>
+    <div class="hrline"></div>
+
+ <div class="slideshow">
+						<ul>
+							<li><img src="images/laboratory/large-06.jpg" alt="" /></li>
+						</ul>
+				</div>
+                
+    <div class="pro-detail">
+    <h4>Magnatic Stirriar</h4>
+<p>
+This group of magnetic stirrers is similar to the conventional magnetic stirrers but have additional hot plate to achieve heating of solutions to be stirred. The heating is controlled by energy regulator, which ensures regulation at any desired percentage of the capacity of heater.<br /><br />
+•	Maximum Speed RPM: 1800 <br />
+•	Stirring Capacity Ltrs: 5 liter <br />
+•	Heating Capacity Watts 500 <br />
+•	Dimension ( W x D x H ) mm 190 x190 x 170 <br />
+•	Stirring Paddle ØxL mm: 10 x 50<br />
+
+
+</p>
+
+
+    </div>
+  </div>
+  
+<div id='a8' style="display:none;" class="inner-block-contant">
+    <h3>Muffel furnace</h3>
+    <div class="hrline"></div>
+
+ <div class="slideshow">
+						<ul>
+							<li><img src="images/laboratory/large-08.jpg" alt="" /></li>
+						</ul>
+				</div>
+                
+    <div class="pro-detail">
+    <h4>Muffel furnace</h4>
+<p>
+Industrial muffle furnaces are specially designed to suit IS &amp; ASTM Standard. IT is applied in growing fields of Medical research, agricultural, industrial, metal treatment, ash determination &amp; wool industries.<br /><br />
+
+<span>Technical Specification:</span><br />
+•	Outside Body made of M.S. Sheet powder coated <br />
+•	Inner muffle of Ceramic with high grade ceramic instillation <br />
+•	Door insulation of HFK brinks <br />
+•	Heating element are made from kant hal A1 Wire <br />
+•	A Uniform distribution through all 4 sides with mental wire <br />
+•	Max. Working temp up to 1160 ˚C <br />
+•	Equipped with PID temp. Controller cum indicator with indicating lamps & switches <br />
+•	A special type of thermocouple Used for better life and accuracy <br />
+•	Power supply 230 Volts, 50 H2 <br /><br />
+<span>Optional Accessories:</span><br /> 
+•	Digital Timer <br />
+•	PID Profile controller for ramp- soak timer<br />
+•	PID Controller with printer or computer interface.  <br /><br />
+<span>Sizes available for industrial muffle furnaces are as below. </span><br />
+
+</p>
+
+<p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td valign="top"><p>
+      <strong>Inner Dimension</strong></p></td>
+    <td valign="top"><p><strong>Outer Dimension</strong></p></td>
+    <td valign="top"><p><strong>Rating K. W.</strong></p></td>
+    <td valign="top"><p><strong>Power consumer</strong></p></td>
+    <td valign="top"><p><strong>Net weight Aprox</strong></p></td>
+  </tr>
+  <tr>
+    <td valign="top"><p>9&quot;x4&quot;x4&quot;</p></td>
+    <td valign="top"><p>18&quot;x14&quot;x14&quot;</p></td>
+    <td valign="top"><p>2</p></td>
+    <td valign="top"><p>9</p></td>
+    <td valign="top"><p>30 KG</p></td>
+  </tr>
+  <tr>
+    <td valign="top"><p>10&quot;X5&quot;X5&quot;</p></td>
+    <td valign="top"><p>19&quot;X15&quot;X15&quot;</p></td>
+    <td valign="top"><p>2.5</p></td>
+    <td valign="top"><p>11</p></td>
+    <td valign="top"><p>40 KG</p></td>
+  </tr>
+  <tr>
+    <td valign="top"><p>12&quot;X6&quot;X6&quot;</p></td>
+    <td valign="top"><p>21&quot;X17&quot;X17&quot;</p></td>
+    <td valign="top"><p>3.5</p></td>
+    <td valign="top"><p>15</p></td>
+    <td valign="top"><p>55 KG</p></td>
+  </tr>
+  <tr>
+    <td valign="top"><p>18&quot;X9&quot;X9&quot;</p></td>
+    <td valign="top"><p>28&quot;X20&quot;X20&quot;</p></td>
+    <td valign="top"><p>6</p></td>
+    <td valign="top"><p>26</p></td>
+    <td valign="top"><p>80 KG</p></td>
+  </tr>
+</table>
+</p>
+
+
+    </div>
+  </div>
+  
+<div id='a9' style="display:none;" class="inner-block-contant">
+    <h3>Rotary shaker</h3>
+    <div class="hrline"></div>
+
+ <div class="slideshow">
+						<ul>
+							<li><img src="images/laboratory/large-09.jpg" alt="" /></li>
+						</ul>
+				</div>
+                
+    <div class="pro-detail">
+    <h4>Rotary shaker</h4>
+<p>
+•	Used for shaking Erlyn Meyer Conical Flasks with S.S. Lotus Clamps.<br /> 
+•	Powered by continuous duty, variable speed self cooled PMDC Motor with adjustable Orbital speed from 50 to 200 RPM.<br />
+•	Provided with DIGITAL RPM Indicator &amp; DIGITAL Timer up to 999 min.<br />
+•	Unit works on 230 V AC, 50 Hz. Supply.<br />
+</p>
+
+<p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td width="153" valign="top"><p><strong>&nbsp;CAPACITY </strong></p></td>
+    <td width="120" valign="top"><p><strong>&nbsp;FLASKS </strong></p></td>
+    <td width="135" valign="top"><p><strong>CAPACITY </strong></p></td>
+    <td width="100" valign="top"><p><strong>FLASKS </strong></p></td>
+  </tr>
+  <tr>
+    <td width="153" valign="top"><p>250ml/500ml </p></td>
+    <td width="120" valign="top"><p>09</p></td>
+    <td width="135" valign="top"><p>1000 ml</p></td>
+    <td width="100" valign="top"><p>09</p></td>
+  </tr>
+  <tr>
+    <td width="153" valign="top"><p>250ml/500ml </p></td>
+    <td width="120" valign="top"><p>12</p></td>
+    <td width="135" valign="top"><p>1000 ml</p></td>
+    <td width="100" valign="top"><p>12</p></td>
+  </tr>
+  <tr>
+    <td width="153" valign="top"><p>250ml/500ml </p></td>
+    <td width="120" valign="top"><p>16</p></td>
+    <td width="135" valign="top"><p>1000 ml</p></td>
+    <td width="100" valign="top"><p>16</p></td>
+  </tr>
+  <tr>
+    <td width="153" valign="top"><p>250ml/500ml </p></td>
+    <td width="120" valign="top"><p>25</p></td>
+    <td width="135" valign="top"><p>1000 ml</p></td>
+    <td width="100" valign="top"><p>25</p></td>
+  </tr>
+  <tr>
+    <td width="153" valign="top"><p>250ml/500ml </p></td>
+    <td width="120" valign="top"><p>36</p></td>
+    <td width="135" valign="top"><p>1000 ml</p></td>
+    <td width="100" valign="top"><p>36</p></td>
+  </tr>
+</table>
+</p>
+
+<p>
+<span> HEAVY DUTY MODEL </span><br />
+• Used for shaking Erlyn Meyer Conical Flasks with S.S. Lotus Clamps. <br />
+• Incorporated with heavy duty AC Brushless motor &amp; gear box arrangement with Variable Frequency Drive (VFD) to control the orbital motion speed from 50 to 200 RPM. <br />
+• The shaking assembly comprises of heavy duty a eccentric drive arrangement placed at the centre and ball bearing attachment placed on the four sides of the shaker. <br />
+• These Shakers are sturdy and specifically designed for continuous heavy duty operations in production facilities.<br />
+• Provided with DIGITAL RPM Indicator &amp; DIGITAL Timer upto 999 min.<br />
+• Unit works on 230 V AC, 50 Hz. Supply OR 440 3 Phase supply.<br />
+</p>
+
+<p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td width="154" valign="top"><p align="center"><strong>&nbsp;CAPACITY </strong></p></td>
+    <td width="119" valign="top"><p align="center"><strong>FLASKS </strong></p></td>
+    <td width="76" valign="top"><p align="center"><strong>CAPACITY </strong></p></td>
+    <td width="156" valign="top"><p align="center"><strong>FLASKS </strong></p></td>
+  </tr>
+  <tr>
+    <td width="154" valign="top"><p align="center">250ml/500ml </p></td>
+    <td width="119" valign="top"><p align="center">36</p></td>
+    <td width="76" valign="top"><p align="center">1000 ml</p></td>
+    <td width="156" valign="top"><p align="center">36</p></td>
+  </tr>
+  <tr>
+    <td width="154" valign="top"><p align="center">250ml/500ml </p></td>
+    <td width="119" valign="top"><p align="center">49</p></td>
+    <td width="76" valign="top"><p align="center">1000 ml</p></td>
+    <td width="156" valign="top"><p align="center">49</p></td>
+  </tr>
+  <tr>
+    <td width="154" valign="top"><p align="center">250ml/500ml </p></td>
+    <td width="119" valign="top"><p align="center">64</p></td>
+    <td width="76" valign="top"><p align="center">1000 ml</p></td>
+    <td width="156" valign="top"><p align="center">64</p></td>
+  </tr>
+  <tr>
+    <td width="154" valign="top"><p align="center">250ml/500ml </p></td>
+    <td width="119" valign="top"><p align="center">100</p></td>
+    <td width="76" valign="top"><p align="center">1000 ml</p></td>
+    <td width="156" valign="top"><p align="center">100</p></td>
+  </tr>
+</table>
+</p>
+<p>
+<span>OPTIONAL :</span> 
+Digital Timer upto 999 min AC Brushless Motor with Variable Frequency Drive in lieu of PMDC Motor for heavy duty operations
+</p>
+    </div>
+  </div>
+  
+  
+  <div id='a10' style="display:none;" class="inner-block-contant">
+    <h3>Tensile Testor</h3>
+    <div class="hrline"></div>
+
+ <div class="slideshow">
+						<ul>
+							<li><img src="images/laboratory/large-10.jpg" alt="" /></li>
+						</ul>
+				</div>
+                
+    <div class="pro-detail">
+    <h4>Tensile Testor</h4>
+<p>
+<h4>Computerized Tensile Testing Machines (Model 1.3D &amp; 1.4F)</h4><br />
+With the help of our Testing Machines, following tests can be performed on any work-piece on various parameters without affecting to the control panel:<br />
+•	Tensile strength<br />
+•	Compressive strength<br />
+•	Flexural<br />
+•	Shear<br />
+•	Bend<br />
+•	Bond<br />
+•	Hysteresis<br />
+•	Modulus<br />
+</p>
+
+<p>
+<span>Optional Future:</span><br/>
+•	Maximum load (Optional)<br/>
+•	Break load (Optional)<br/>
+•	Modulus of elasticity (Optional)<br/>
+•	Yield point (Optional)<br/>
+•	Graph for the materials (dumbbell shape or round bar shape) (Optional)<br/>
+•	Force measurement available in Kgf or Newton (Optional)<br/><br/>
+
+These Testing Machines can also be used to show various test results reports of following:<br/>
+•	Yield load<br/>
+•	Yield extension<br/>
+•	Break load<br/>
+•	Break extension<br/>
+•	Maximum stress<br/>
+•	Stress yield<br/>
+•	Stress break<br/>
+•	Maximum load<br/>
+•	Percentage extension<br/>
+•	Modulus of elasticityl following:<br/>
+The display unit of the machine can show more than one graph on the screen in different colors, so that 6 to 7 graphs of same material can be compared.
+Accuracy: +/- 1% and 1/10th of scale value.<br /><br />
+</p>
+
+<h4>Digital Tensile Tester (Model 1.5 G )</h4>
+<p>
+<span>These products include following:</span><br />
+ 
+•	Yarns, Man made Yarns, Nylon &amp; Fabrics<br />
+•	Cables &amp; Conductors<br />
+•	Rubber Products, Polyethylene, Polypropylene<br />
+•	Teflon Products, Metal &amp; Non-Metal Products<br />
+•	LLDPE, HDPE, MDPE Pipes<br />
+•	Woven Sack<br />
+•	Paper Products, Card Board Products and Plywood<br />
+
+Our machines are good in each aspect including appropriate capacity, traverse speed, and grip separation. This ensures that our complete range in manufactured in compliance with international standards such as BIS, BS, ASTM, DIN or ISO standards. <br />
+These machines have been calibrated as per the IS-1828(Part-1)2005. <br /><br />
+ 
+<span>Other technical details: </span><br />
+•	Our digital display unit having LED display which shows load, elongation and last samples maximum load.<br />
+•	Two standard speeds are provided with these machines and an AC variable drive can also be provided if required, at extra cost, for getting variable speeds.<br />
+•	A series of tests such as tensile, compressive, flexural, shear and bend test can be carried out without affecting the panel.<br />
+•	Force measurement is available either in KGF or Newton depending upon the order.<br />
+     Available test range: 500 Grams to 10000 Kgf.(Three Modals)<br />
+     Accuracy: +/- 1% and 1/10th of scale value<br /><br />
+</p>
+<h4>Digital Tensile Tester (Model 1.5 G )</h4>
+<p>
+These Testers are widely used in various industries for testing tensile strength and elongation of a number of products such as<br />
+•	Cables &amp; Conductors<br />
+•	Yarns, Man made Yarns, Nylon and Fabrics<br />
+•	Rubber Products, Polyethylene and Polypropylene<br />
+•	Teflon Products, Metal &amp; Non-Metal Products<br />
+•	Paper Products, Card Board Products and Plywood<br />
+•	Woven Sack<br />
+•	LLDPE, HDPE, MDPE Pipes<br />
+
+	 
+These machines should be chosen keeping in mind appropriate capacity, traverse speed, and grip separation so that the required material can be tested on this machine in accordance with BIS, BS, ASTM, DIN or ISO standards.<br /> 
+Digital Tensile Testers has been Calibrated as per the IS-1828(Part-1)2005.<br />
+•         The grips or fixtures are designed for various products and materials that conforms the compatibility of these machines to set industry standards and clients requirements.<br /><br />
+
+<span>Other technical details:</span> <br />
+
+•	The digital display unit having LED display which shows load, elongation and last samples maximum load.<br />
+•	Tensile, compressive, flexural, shear, bend test can be carried out without affecting the panel.<br />
+•	Two standard speeds are provided with these machines. An AC variable drive can also be provided to get variable speed as per the client's requirement.<br />
+Available test range: 500 Grams to 10000 Kgf.<br />
+Accuracy: +/- 1 % and 1 /10th of scale value.<br />
+
+</p>
+
+    </div>
+  </div>
+  
+  <div id='a11' style="display:none;" class="inner-block-contant">
+    <h3>Vaccum Oven</h3>
+    <div class="hrline"></div>
+
+ <div class="slideshow">
+						<ul>
+							<li><img src="images/laboratory/large-11.jpg" alt="" /></li>
+						</ul>
+				</div>
+                
+    <div class="pro-detail">
+    <h4>Vaccum Oven</h4>
+<p>
+Double walled, Outer Body made of Mild steel duly powder coated and working chamber made of cylindrical shaper Heavy gauge of Stainless Steel. A glass Window made of Toughened glass for viewing without opening the Door. Temperature is controlled by PID controller cum indicator from room temperature 50 C TO 150 C. Front panel fitted with Vacuum Gauge, Vacuum Valves Indicator Lamp 220 Volts A.C supplied with removable shelve.<br /><br />
+
+(INSIDE CHAMBER ROUND SHAPE) DIA x DEPTH<br /> 
+(a) 200 mm x 200 mm <br />
+(b) 250 mm x 250 mm <br />
+(c) 250 mm x 300 mm <br />
+(d) 300 mm x 300 mm <br /><br />
+
+Outer body made of Stainless Steel LM-304 grade [20 swg.] and cylindrically shaped Inner Chamber made of heavy gauge Stainless Steel mirror finish<br />
+•	Microprocessor based AUTO TUNING PID Digital Temperature Indicating Controller for precise Temperature control with BUILTIN Timer.<br />
+•	Shelves are made of Stainless Steel<br />
+•	Provided with Validation Documents<br /><br />
+
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+  <th colspan="4">Square Size</th>
+  </tr>
+  <tr>
+    <td width="114" valign="top"><p>Chamber Size (W*H*D)</p></td>
+    <td width="114" valign="top"><p>&nbsp;</p></td>
+    <td width="114" valign="top"><p>Ratting Watt</p></td>
+    <td width="114" valign="top"><p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td width="114" valign="top"><p>8”*8”*12”</p></td>
+    <td width="114" valign="top"><p>20*20*30</p></td>
+    <td width="114" valign="top"><p>1000</p></td>
+    <td width="114" valign="top"><p>2</p></td>
+  </tr>
+  <tr>
+    <td width="114" valign="top"><p>12”*12”*12”</p></td>
+    <td width="114" valign="top"><p>30*30*30</p></td>
+    <td width="114" valign="top"><p>1250</p></td>
+    <td width="114" valign="top"><p>2</p></td>
+  </tr>
+  <tr>
+    <td width="114" valign="top"><p>12”*12”*16”</p></td>
+    <td width="114" valign="top"><p>30*30*40</p></td>
+    <td width="114" valign="top"><p>1500</p></td>
+    <td width="114" valign="top"><p>2</p></td>
+  </tr>
+  <tr>
+    <td width="114" valign="top"><p>14”*14”*20”</p></td>
+    <td width="114" valign="top"><p>40*40*50</p></td>
+    <td width="114" valign="top"><p>1750</p></td>
+    <td width="114" valign="top"><p>3</p></td>
+  </tr>
+  <tr>
+    <td width="114" valign="top"><p>18”*18”*24”</p></td>
+    <td width="114" valign="top"><p>45*45*60</p></td>
+    <td width="114" valign="top"><p>2500</p></td>
+    <td width="114" valign="top"><p>3</p></td>
+  </tr>
+  <tr>
+    <td width="114" valign="top"><p>20”*20”*30”</p></td>
+    <td width="114" valign="top"><p>50*50*75</p></td>
+    <td width="114" valign="top"><p>3000</p></td>
+    <td width="114" valign="top"><p>4</p></td>
+  </tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+  <th colspan="4">Round Type</th>
+  </tr>
+  <tr>
+    <td width="142" valign="top"><p>Chamber Size (W*H*D)</p></td>
+    <td width="142" valign="top"><p>Chamber Size in mm (W*H*D)</p></td>
+    <td width="142" valign="top"><p>Ratting Watt</p></td>
+    <td width="142" valign="top"><p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td width="142" valign="top"><p>9”</p></td>
+    <td width="142" valign="top"><p>200*200</p></td>
+    <td width="142" valign="top"><p>&nbsp;</p></td>
+    <td width="142" valign="top"><p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td width="142" valign="top"><p>&nbsp;</p></td>
+    <td width="142" valign="top"><p>250*250</p></td>
+    <td width="142" valign="top"><p>&nbsp;</p></td>
+    <td width="142" valign="top"><p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td width="142" valign="top"><p>&nbsp;</p></td>
+    <td width="142" valign="top"><p>250*300</p></td>
+    <td width="142" valign="top"><p>&nbsp;</p></td>
+    <td width="142" valign="top"><p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td width="142" valign="top"><p>&nbsp;</p></td>
+    <td width="142" valign="top"><p>300*300</p></td>
+    <td width="142" valign="top"><p>&nbsp;</p></td>
+    <td width="142" valign="top"><p>&nbsp;</p></td>
+  </tr>
+</table>
+
+
+</p>
+
+    </div>
+  </div>
+  
+  <div id='a12' style="display:none;" class="inner-block-contant">
+    <h3>Water Bath</h3>
+    <div class="hrline"></div>
+
+ <div class="slideshow">
+						<ul>
+							<li><img src="images/laboratory/large-12.jpg" alt="" /></li>
+						</ul>
+				</div>
+                
+    <div class="pro-detail">
+    <h4>Water Bath</h4>
+<p>
+Low Temperature Water Bath, Rectangular Water Bath, Constant Temperature Water Bath, Viscosity Bath, Digital Oil Bath, Low Temperature Bath <br />
+Rectangular water bath is useful for boiling and general purpose work. Rectangular Water Bath is made up of long lasting single walled kettle element. Made of thick gauge stainless steel, the lid is having 6 or 12 holes with concentric rings. <br /><br />
+
+<table border="1" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td valign="top"><p>
+      <strong>Size</strong></p></td>
+    <td valign="top"><p><strong>Rating Watts</strong></p></td>
+    <td valign="top"><p><strong>Holes</strong></p></td>
+  </tr>
+  <tr>
+    <td valign="top"><p>35 x 25 x 10 cm</p></td>
+    <td valign="top"><p>1000</p></td>
+    <td valign="top"><p>6 Hole of 3&quot;Dia</p></td>
+  </tr>
+  <tr>
+    <td valign="top"><p>40 x 30 x 10 cm</p></td>
+    <td valign="top"><p>1500</p></td>
+    <td valign="top"><p>12 Hole of 3&quot;Dia</p></td>
+  </tr>
+</table>
+<br /><br />
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <th colspan="3">Specification</th>
+  </tr>
+  <tr>
+    <td width="30%"><p>Maximum    Temperature</p></td>
+    <td><p>Ambient    to 100ºC</p></td>
+  </tr>
+  <tr>
+    <td><p>Sensitivity</p></td>
+    <td><p>+0.5ºC</p></td>
+  </tr>
+  <tr>
+    <td><p>Temperature</p></td>
+    <td><p>Ambient    +5ºC to 95ºC</p></td>
+  </tr>
+  <tr>
+    <td><p>Size of Bath</p></td>
+    <td><p>300X250X130 mm</p></td>
+  </tr>
+  <tr>
+    <td><p>Capacity of water in the Bath</p></td>
+    <td><p>08 Liters</p></td>
+  </tr>
+  <tr>
+    <td><p>No. Of Beakers with Lids</p></td>
+    <td><p>06 Nos.</p></td>
+  </tr>
+  <tr>
+    <td><p>Capacity of the Beakers</p></td>
+    <td><p>500ml.( ±50ml.)</p></td>
+  </tr>
+  <tr>
+    <td><p>Wattage    of Heater</p></td>
+    <td><p>1.5    K.W.</p></td>
+  </tr>
+  <tr>
+    <td><p>&nbsp;</p></td>
+    <td><p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td><p>Power Supply</p></td>
+    <td><p>220 Volts, Single Phase, 50 HZ, AC Supply</p></td>
+  </tr>
+  <tr>
+    <td><p>Holes</p></td>
+    <td><p>75mm with steps of 25mm</p></td>
+  </tr>
+  <tr>
+    <td><p>Timer</p></td>
+    <td><p>Optional</p></td>
+  </tr>
+</table>
+<br /><br />
+<span>Universal water Bath</span><br />
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <th colspan="3">Specification</th>
+  </tr>
+  <tr>
+    <td width="30%"><p>Temperature</p></td>
+    <td><p>Ambient    0 to 95ºC</p></td>
+  </tr>
+  <tr>
+    <td><p>Timer</p></td>
+    <td><p>Optional</p></td>
+  </tr>
+  <tr>
+    <td><p>Capacity</p></td>
+    <td><p>15    Liters</p></td>
+  </tr>
+  <tr>
+    <td><p>Controller</p></td>
+    <td><p>PID</p></td>
+  </tr>
+  <tr>
+    <td><p>Accuracy</p></td>
+    <td><p>±0.2ºC</p></td>
+  </tr>
+  <tr>
+    <td><p>Sensor</p></td>
+    <td><p>Liquid expansion capillary</p></td>
+  </tr>
+  <tr>
+    <td><p>Insulation</p></td>
+    <td><p>Glass    wool</p></td>
+  </tr>
+  <tr>
+    <td><p>Size</p></td>
+    <td><p>325 mm (L) X240 mm (B) X180 mm (D</p></td>
+  </tr>
+</table>
+
+</p>
+
+    </div>
+  </div>
+</div> 
+
+
+  
+  
+  
+  <div class="right-nevi-bg" style="min-height:1000px;">
+    <div class="right-nevi">
+    <h3>LABORATORY INSTRUMENTS</h3>
+      <ul>
+        <li><a class="sidemenuactive" href="javascript:switchid('a1','active1');" id="active1" >Autoclave</a></li>
+        <li><a href="javascript:switchid('a2','active2');" id="active2">Bod Shaker</a></li>
+        <li><a href="javascript:switchid('a3','active3');" id="active3">Hot air oven</a></li>
+        <li><a href="javascript:switchid('a4','active4');" id="active4">Humidity chamber</a></li>
+        <li><a href="javascript:switchid('a5','active5');" id="active5">Laboratory stirrer</a></li>
+        <li><a href="javascript:switchid('a6','active6');" id="active6">Laminar Air flow</a></li>
+        <li><a href="javascript:switchid('a7','active7');" id="active7">Magnatic Stirriar</a></li>
+        <li><a href="javascript:switchid('a8','active8');" id="active8">Muffel furnace</a></li>
+        <li><a href="javascript:switchid('a9','active9');" id="active9">Rotary shaker</a></li>
+        <li><a href="javascript:switchid('a10','active10');" id="active10">Tensile Testor</a></li>
+        <li><a href="javascript:switchid('a11','active11');" id="active11">Vaccum Oven</a></li>
+        <li><a href="javascript:switchid('a12','active12');" id="active12">Water Bath</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!--Middle Part End-->
+ <!--Footer Part Start-->
+ <div class="footer">
+		 <div class="footer-width">
+		
+				<div class="footer-left">
+					<a href="index.html"><div class="footer-logo"></div></a><br />
+					<div class="copyright"><span>Copyright © 2012 Vision Industrial, All Rights Reserved.</span></div>
+				</div>
+				
+				<div class="footer-navigation">
+						<ul class="footer-nav">
+							  <li><a href="index.html">HOME</a></li>
+							  <li>/</li>
+							  <li><a href="about-us.html">ABOUT US</a></li>
+							  <li>/</li>
+							 <li><a href="productsmain.html">PRODUCTS</a></li>
+							  <li>/</li>
+							  <li><a href="contact-us.html">CONTACT</a></li>
+						 </ul>
+						  <br/>
+						<p class="powered">Powered By :<span class="design-by"> www.zerodesigns.in</span></p>
+				</div>
+		</div>
+  </div>
+ <!--Footer Part End--> 
+</div>
+
+</body>
+</html>

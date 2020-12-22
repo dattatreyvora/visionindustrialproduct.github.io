@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+/* some custom fonts via google font api */
+
+#mcs3_container{height:200px; left:-5px; margin:0; padding:0 5px; position:relative; top:0; width:188px;}
+#mcs3_container .customScrollBox{position:relative; height:100%; overflow:hidden;}
+#mcs3_container .customScrollBox .container{position:relative; width:160px; top:0; float:left;}
+#mcs3_container .customScrollBox .content{clear:both;}
+#mcs3_container .customScrollBox .content p{ margin:0; color:#31231E;  font-size:14px; line-height:20px;}
+#mcs3_container .customScrollBox img{border:3px solid #31231E; margin:0 0 0 15px;}
+#mcs3_container .dragger_container{position:relative; width:0px; height:100%; float:left; margin:0px 0 0 25px; border-left:1px solid #ccc; border-right:1px solid #fff; cursor:pointer}
+#mcs3_container .dragger{position:absolute; width:9px; height:25px; background:#ccc; margin-left:-5px; overflow:hidden; cursor:pointer; }
+#mcs3_container .dragger_pressed{position:absolute; width:9px; height:25px; background:#25B430; margin-left:-5px; overflow:hidden; cursor:pointer;}
+

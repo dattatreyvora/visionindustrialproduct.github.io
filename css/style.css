@@ -1,0 +1,1106 @@
+/* CSS Document */
+html, body, div, span, small, object, iframe, h1, h2, h3, h4, h5, h6, pre, a, abbr, blockquote, acronym, address, code, del, dfn, dl, dt, dd, em, img, q, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, b, p {
+	border : 0;
+	margin:0;
+	padding:0;
+	font-size : 100%;
+	font:normal 12px/20px Arial, Helvetica, sans-serif;
+}
+body {
+	background-color:#fff;
+	font:normal 12px/20px Arial, Helvetica, sans-serif;
+	color:#4c4c4c;
+	margin:0;
+}
+
+
+@font-face {
+    font-family: 'FlamaSemicondensedBasic';
+    src: url('../fonts/flamasemicondensed-basic-webfont-webfont.eot');
+    src: url('../fonts/flamasemicondensed-basic-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flamasemicondensed-basic-webfont-webfont.woff') format('woff'),
+         url('../fonts/flamasemicondensed-basic-webfont-webfont.ttf') format('truetype'),
+         url('../fonts/flamasemicondensed-basic-webfont-webfont.svg#FlamaSemicondensedBasic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FlamaSemicondensedBold';
+    src: url('../fonts/flamasemicondensed-bold-webfont-webfont.eot');
+    src: url('../fonts/flamasemicondensed-bold-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flamasemicondensed-bold-webfont-webfont.woff') format('woff'),
+         url('../fonts/flamasemicondensed-bold-webfont-webfont.ttf') format('truetype'),
+         url('../fonts/flamasemicondensed-bold-webfont-webfont.svg#FlamaSemicondensedBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+	
+@font-face {
+    font-family: 'FlamaSemicondensedBook';
+    src: url('../fonts/flamasemicondensed-book-webfont-webfont.eot');
+    src: url('../fonts/flamasemicondensed-book-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flamasemicondensed-book-webfont-webfont.woff') format('woff'),
+         url('../fonts/flamasemicondensed-book-webfont-webfont.ttf') format('truetype'),
+         url('../fonts/flamasemicondensed-book-webfont-webfont.svg#FlamaSemicondensedBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FlamaSemicondensedUltralight';
+    src: url('../fonts/flamasemicondensed-ultralight-webfont-webfont.eot');
+    src: url('../fonts/flamasemicondensed-ultralight-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flamasemicondensed-ultralight-webfont-webfont.woff') format('woff'),
+         url('../fonts/flamasemicondensed-ultralight-webfont-webfont.ttf') format('truetype'),
+         url('../fonts/flamasemicondensed-ultralight-webfont-webfont.svg#FlamaSemicondensedUltralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+ @font-face {
+ font-family: 'FlamaSemicondensedBasic';
+ src: url('../fonts/flamasemicondensed-basic-webfont.eot');
+ src: url('../fonts/flamasemicondensed-basic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/flamasemicondensed-basic-webfont.woff') format('woff'), url('../fonts/flamasemicondensed-basic-webfont.ttf') format('truetype'), url('../fonts/flamasemicondensed-basic-webfont.svg#FlamaSemicondensedBasic') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+ @font-face {
+ font-family: 'FlamaSemicondensedBold';
+ src: url('../fonts/flamasemicondensed-bold-webfont.eot');
+ src: url('../fonts/flamasemicondensed-bold-webfont.eot?#iefix') format('embedded-opentype'),  url('../fonts/flamasemicondensed-bold-webfont.woff') format('woff'), url('../fonts/flamasemicondensed-bold-webfont.ttf') format('truetype'), url('../fonts/flamasemicondensed-bold-webfont.svg#FlamaSemicondensedBold') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+ @font-face {
+ font-family: 'FlamaSemicondensedBook';
+ src: url('../fonts/flamasemicondensed-book-webfont.eot');
+ src: url('../fonts/flamasemicondensed-book-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/flamasemicondensed-book-webfont.woff') format('woff'), url('../fonts/flamasemicondensed-book-webfont.ttf') format('truetype'), url('../fonts/flamasemicondensed-book-webfont.svg#FlamaSemicondensedBook') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+ @font-face {
+ font-family: 'FlamaSemicondensedUltralight';
+ src: url('../fonts/flamasemicondensed-ultralight-webfont.eot');
+ src: url('../fonts/flamasemicondensed-ultralight-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/flamasemicondensed-ultralight-webfont.woff') format('woff'), url('../fonts/flamasemicondensed-ultralight-webfont.ttf') format('truetype'), url('../fonts/flamasemicondensed-ultralight-webfont.svg#FlamaSemicondensedUltralight') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}*/
+ul, ol {
+	margin:0;
+	padding:0;
+}
+li {
+	list-style-position:outside;
+}
+ul {
+	list-style:none outside none;
+	z-index:0;
+}
+	
+
+/* Selection Styles*/
+
+:: -moz-selection {
+background:#395bdb;
+color:#fff;
+}
+:: selection {
+background:#395bdb;
+color:#fff;
+}
+p {
+	margin:0px;
+	line-height:18px;
+}
+a {
+	color:#3FA0CB;
+	text-decoration:none;
+	outline:none;
+}
+a:hover {
+	color:#3d3d3d;
+	text-decoration:none;
+	outline:none;
+}
+select, input {
+	border:1px solid #b5b5b5;
+	margin:0;
+	padding:0;
+	color:#666;
+	float:right
+}
+/*	Headings
+--------------------------------------------------------------------------------------------*/
+
+h1 {
+	font-size:24px;
+	font-weight:normal;
+	margin:0;
+}
+h2 {
+	color: #252626;
+	font-family: "Droid Sans";
+	font-size: 15px;
+	font-weight: normal;
+	margin: 0;
+}
+h3 {
+	font-size:17px;
+	font-weight:normal;
+	margin:0;
+}
+h4 {
+	font-size:16px;
+	font-weight:normal;
+	margin:0;
+	color:#444;
+}
+h5 {
+	font-size:14px;
+	font-weight:normal;
+	margin:0;
+}
+h6 {
+	font-size:12px;
+	font-weight:normal;
+	margin:0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family:  "FlamaSemicondensedBasic", Sans-serif;
+}
+#fullwrap {
+	width:100%;
+	background:url(../image/bottom-bg.jpg) repeat-x bottom;
+	float:left;
+}
+#wrapper {
+	width:992px;
+	margin:0px auto;
+	padding:0px 12px;
+	overflow:hidden;
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+.clear {
+	clear:both;
+}
+/* =============== Header Class =================== */
+
+.wrapper {
+	width:100%;
+	background:#06a9e8 url(../images/bg-header.jpg) repeat-x;
+	float:left;
+	height:481px;
+}
+#header {
+	width:992px;
+	margin:0px auto;
+	position:relative;
+	overflow: auto;
+}
+.header {
+	width:992px;
+	margin:0px auto;
+}
+.full-bg {
+	background:url(../images/main-bg.jpg) no-repeat center top;
+	width:100%;
+	height:432px;
+	z-index:0;
+	position:absolute;
+	top:43px;
+	left:0px;
+}
+.full-bg-inner {
+	width:100%;
+	height:99px;
+	z-index:0;
+	position:absolute;
+	top:43px;
+	left:0px;
+}
+.top-nevi {
+	width:992px;
+	height:42px;
+	float:left;
+}
+.welcom {
+	float:right;
+	padding:33px 0px;
+	font:normal 30px/33px FlamaSemicondensedUltralight, sans-serif;
+	color:#757575;
+	text-shadow:0px 1px white;
+}
+.top-navi-right {
+	float:right;
+	width:552px;
+	padding:12px 0px;
+}
+.top-navi-right ul {
+	float:right;
+}
+.top-navi-right li {
+	float:left;
+	margin-right:10px;
+}
+.top-navi-right li img {
+	float:left;
+	margin-right:0px;
+}
+.top-navi-right h1 {
+	float:left;
+	font:normal 12px/16px FlamaSemicondensedBasic, sans-serif;
+	color:#3e93b8;
+	text-shadow:0px 1px white;
+	margin-left:5px;
+}
+.top-navi-right span {
+	float:left;
+	font:normal 12px/16px FlamaSemicondensedBasic, sans-serif;
+	color:#757575;
+	text-shadow:0px 1px white;
+	margin-left:5px;
+}
+.main {
+	width:992px;
+	float:left;
+}
+.logo {
+	background:url(../images/logo.png);
+	width:250px;
+	height:45px;
+	float:left;
+	margin-top:-7px;
+	margin-left:5px;
+	margin-top:30px;
+}
+.navi {
+	float:right;
+	padding:5px 0px;
+}
+.navi ul {
+	padding:6px 0px;
+}
+.navi ul li {
+	float:left;
+	font:normal 14px/16px FlamaSemicondensedBasic, sans-serif;
+	color:#5b5b5b;
+	padding: 0 16px;
+	text-shadow:0px 1px white;
+}
+.navi ul li a {
+	font:normal 14px/16px FlamaSemicondensedBasic, sans-serif;
+	color:#5b5b5b;
+	text-shadow: 0 2px 0 #ff;
+	text-shadow:0px 1px white;
+}
+.navi ul li a:hover {
+	font:normal 14px/16px FlamaSemicondensedBasic, sans-serif;
+	color:#3fa0cb;
+	text-decoration:none;
+	text-shadow:0px 1px white;
+}
+.navi .active, .navi .active:hover {
+	font:normal 14px/16px FlamaSemicondensedBasic, sans-serif;
+	color:#3fa0cb;
+	text-decoration:none;
+	text-shadow:0px 1px white;
+}
+/* =============== Middle Class =================== */
+#middle {
+	width:992px;
+	margin:0px auto;
+	position:relative;
+	clear:both;
+}
+.middle-part {
+	float:left;
+	position:relative;
+	width:100%;
+}
+.home-block {
+	background:url(../images/block-bg.png);
+	width:367px;
+	height:282px;
+	float:left;
+	top:-41px;
+	left:0px;
+	position:absolute;
+}
+.home-block-contant {
+	float:left;
+	width:292px;
+	padding:15px;
+}
+.home-block-contant h3 {
+	float:left;
+	font:bold 24px/22px FlamaSemicondensedBook, sans-serif;
+	color:#fff;
+	text-shadow:0px 1px #156080;
+	letter-spacing: -1px;
+}
+.home-block-contant p {
+	float:left;
+	width:297px;
+	font:normal 13px/16px FlamaSemicondensedBasic, sans-serif;
+	color:#fff;
+	text-shadow:0px 1px #156080;
+	margin-top:7px;
+}
+.readmore {
+	float:left;
+	width:292px;
+	font:normal 13px/18px FlamaSemicondensedBasic, sans-serif;
+	color:#fff;
+	margin-top:15px;
+}
+.readmore2 {
+	float:left;
+	font:normal 12px/18px FlamaSemicondensedBasic, sans-serif;
+	color:#046491;
+	margin-top:5px;
+}
+.search {
+	background:url(../images/search-bg.png);
+	width:312px;
+	height:52px;
+	float:left;
+	margin-top:33px;
+}
+.textbox {
+	float:left;
+	text-align:left;
+	font-size:14px;
+	color:#666;
+	border:none;
+	line-height:24px;
+	width:209px;
+	height:28px;
+	margin:11px;
+}
+.buttonsend {
+	float:left;
+	height:29px;
+	width:70px;
+	border:none;
+	cursor:pointer;
+	background:none;
+	margin:12px 0px;
+	font:normal 13px/18px FlamaSemicondensedBasic, sans-serif;
+	color:#000;
+}
+.home-block2 {
+	background:url(../images/block-bg2.png);
+	width:196px;
+	height:240px;
+	float:left;
+	margin-left:344px;
+	margin-top:2px;
+}
+.pro-list-title {
+	float:left;
+	font:bold 16px/18px FlamaSemicondensedBook, sans-serif;
+	color:#ff8100;
+	text-shadow:0px 0px #a5a5a5;
+	margin:12px 20px;
+}
+.product-list {
+	float:left;
+	clear:both;
+	width:98%;
+}
+.product-list ul {
+	float:left;
+	width:100%;
+}
+.product-list li {
+	float:left;
+	font:normal 11px/39px FlamaSemicondensedBasic, sans-serif;
+	color:#8e8e8e;
+	margin-left:18px;
+	background:url(../images/arrow-1.png) center right no-repeat;
+}
+.product-list ul li a {
+	float:left;
+	font:normal 11px/39px FlamaSemicondensedBasic, sans-serif;
+	color:#8e8e8e;
+	clear:both;
+	width:166px;
+}
+.product-list ul li a:hover {
+	float:left;
+	font:normal 11px/39px FlamaSemicondensedBasic, sans-serif;
+	color:#3FA0CB;
+	clear:both;
+	text-decoration:none;
+}
+.product-list .active, .product-list .active:hover {
+	float:left;
+	font:normal 11px/39px FlamaSemicondensedBasic, sans-serif;
+	color:#3FA0CB;
+	clear:both;
+	text-decoration:none;
+	width:166px;
+}
+.home-block3 {
+	width:445px;
+	height:240px;
+	float:left;
+}
+.other-pro-title {
+	float:left;
+	font:bold 43px/43px FlamaSemicondensedUltralight, sans-serif;
+	color:#d0d0d0;
+	margin:15px 0px 0px 20px;
+}
+.new-products {
+	float:left;
+	width:100%;
+	margin-left:20px;
+}
+.new-pro-block {
+	float:left;
+	width:100%;
+	margin-top:20px;
+}
+.new-pro-block h3 {
+	float: left;
+	font: bold 22px/24px FlamaSemicondensedBook, sans-serif;
+	color: #FF8100;
+}
+.new-pro-block p {
+	float:left;
+	width:260px;
+	font:normal 13px/21px FlamaSemicondensedBasic, sans-serif;
+	color:#6b6b6b;
+	margin-top:10px;
+}
+.new-pro-block img {
+	float:left;
+}
+/* =============== footer Class =================== */
+
+.footer {
+	background:url(../images/footer-bg.jpg);
+	height:100px;
+	width:100%;
+	float:left;
+	background-repeat:repeat-x
+}
+.footer-width {
+	width:992px;
+	margin:0 auto;
+	position:relative;
+}
+.footer-left {
+	float:left;
+	width:340px;
+}
+.footer-logo {
+	background:url(../images/logo-footer.png) no-repeat;
+	width:180px;
+	height:32px;
+	float:left;
+	margin-top:25px;
+	margin-left:5px;
+	margin-bottom:3px;
+}
+.footer-navigation {
+	float:left;
+	width:64%;
+	margin:25px 0px 0px 0px;
+}
+.footer-nav {
+	display:inline;
+	float:right;
+	list-style:none outside none;
+	width:auto;
+}
+.footer-nav li {
+	float:left;
+	cursor:pointer;
+	font:normal 13px/18px FlamaSemicondensedBasic, sans-serif;
+	color:#ccc;
+}
+.footer-nav li a {
+	font:normal 13px/18px FlamaSemicondensedBasic, sans-serif;
+	text-decoration:none;
+	color:#ccc;
+	padding:0px 4px;
+}
+.footer-nav li a:hover {
+	font:normal 13px/18px FlamaSemicondensedBasic, sans-serif;
+	color:#fff;
+	text-decoration:none;
+}
+.footer-right {
+	float:right;
+	margin-top:99px;
+}
+/*.footer-iso-logo{background:url(../images/iso.png) no-repeat; width:73px; height:72px; float:right;}*/
+.powered {
+	float:right;
+	margin-top:20px;
+	text-align:right;
+	font:normal 12px/18px FlamaSemicondensedBasic, sans-serif;
+	color:#CCC;
+}
+.powered span {
+	float:right;
+	font:normal 12px/18px FlamaSemicondensedBasic, sans-serif;
+	color:#CCC;
+}
+.design-by {
+	font:normal 12px/18px FlamaSemicondensedBasic, sans-serif;
+	color:#CCC;
+	text-transform:lowercase;
+}
+.design-by:hover {
+	color:#fff
+}
+.copyright {
+	float:left;
+	width:340px;
+	margin-top:8px;
+}
+.copyright span {
+	font:normal 12px/18px FlamaSemicondensedBasic, sans-serif;
+	color:#ddd;
+}
+/* =============== inner Class =================== */
+
+#middle2 {
+	float:left;
+	width:100%;
+	background: #FFF;
+	background-size:100% auto;
+	border-top:1px solid #ccc;
+}
+.inner-banner-bg {
+	float:left;
+	width:100%;
+	background: #409fcb url(../images/inner-banner.png) no-repeat 58% top;
+	height:86px;
+}
+.inner-part-width {
+	width:992px;
+	float:left;
+}
+.inner-container {
+	width:992px;
+	margin:0 auto;
+}
+.container-div {
+	float:left;
+	width:968px;
+	background:#f4f4f4;
+	border:10px solid #FFF;
+	outline:1px solid #ccc;
+	margin:1px 1px 20px 1px;
+}
+.inner-banner-title {
+	margin:10px auto;
+	text-align: right;
+	width: 992px;
+}
+.inner-banner-title h1 {
+	float:right;
+	font: bold 50px/50px FlamaSemicondensedBook, sans-serif;
+	color: #fff;
+	text-shadow:0px -2px #156080;
+}
+.inner-banner-title h3 {
+	float:right;
+	font: bold 16px/18px FlamaSemicondensedBook, sans-serif;
+	color: #000;
+	text-shadow:0px 1px #fff;
+	clear: right;
+}
+.inner-navi {
+	float:left;
+	width:992px;
+	margin-top:12px;
+	clear:both;
+	margin-bottom: 2px;
+}
+.inner-navi ul {
+	padding:10px 0px;
+	float:right;
+}
+.inner-navi ul li {
+	float:left;
+	font:normal 14px/16px FlamaSemicondensedBasic, sans-serif;
+	color:#5b5b5b;
+	padding: 0 3px;
+	text-shadow:0px 1px white;
+}
+.inner-navi ul li a {
+	font:normal 14px/16px FlamaSemicondensedBasic, sans-serif;
+	color:#5b5b5b;
+	text-shadow: 0 2px 0 #ff;
+	text-shadow:0px 1px white;
+}
+.inner-navi ul li a:hover {
+	font:normal 14px/16px FlamaSemicondensedBasic, sans-serif;
+	color:#3fa0cb;
+	text-decoration:none;
+	text-shadow:0px 1px white;
+}
+.inner-navi .active, .inner-navi .active:hover {
+	font:normal 14px/16px FlamaSemicondensedBasic, sans-serif;
+	color:#3fa0cb;
+	text-decoration:none;
+	text-shadow:0px 1px white;
+}
+.left-block-contant {
+	float:left;
+	width:678px;
+	padding:15px;
+}
+.inner-block-contant {
+	float:left;
+	width:100%;
+}
+.inner-block-contant h3 {
+	float:left;
+	font:bold 24px/22px FlamaSemicondensedBold, sans-serif;
+	color:#419fcb;
+	text-transform:uppercase;
+}
+.inner-block-contant p {
+	float:left;
+	width:665px;
+	font:normal 14px/18px FlamaSemicondensedBasic, sans-serif;
+	color:#767676;
+	margin-top:7px;
+	text-align:justify;
+}
+.right-nevi-title {
+	float:left;
+	font:bold 16px/18px FlamaSemicondensedBook, sans-serif;
+	color:#419fcb;
+	text-shadow:0px 0px #a5a5a5;
+	margin:12px 20px;
+}
+.right-nevi-bg {
+	float:left;
+	width:260px;
+	background:#419FCB url(../images/right-nevi-bg.jpg) repeat-y;
+}
+.right-nevi {
+	float:left;
+	width:260px;
+	border-top:1px solid #e5e5e5;
+}
+.right-nevi h3 {
+	float:left;
+	font:bold 18px/22px FlamaSemicondensedBold, sans-serif;
+	color:#FFF;
+	margin:15px 0 15px 20px;
+}
+.right-nevi ul {
+	float:left;
+	width:100%;
+	font:normal 13px/39px FlamaSemicondensedBasic, sans-serif;
+	color:#8e8e8e;
+	text-transform:uppercase;
+}
+.right-nevi ul li {
+	float:left;
+	width:100%;
+	background:url(../images/line.jpg) 20px 0 no-repeat;
+}
+.right-nevi ul li a {
+	float:left;
+	font:normal 13px/42px FlamaSemicondensedBasic, sans-serif;
+	color:#ccc;
+	clear:both;
+	width:78%;
+	padding-left:35px;
+	background:url(../images/arrow-1.png) no-repeat 8% center;
+}
+.right-nevi ul li a:hover {
+	float:left;
+	font:normal 13px/42px FlamaSemicondensedBasic, sans-serif;
+	color:#FFF;
+	clear:both;
+	text-decoration:none;
+	background: url(../images/arrow-1-hover.png) no-repeat 8% center;
+}
+.right-nevi .active, .right-nevi .active:hover {
+	float:left;
+	font:normal 13px/42px FlamaSemicondensedBasic, sans-serif;
+	color:#FFF;
+	clear:both;
+	text-decoration:none;
+	background: url(../images/arrow-1.png) no-repeat 8% center;
+}
+.right-nevi .active a {
+	padding-left:54px;
+}
+.right-sub-nevi {
+	float:left;
+	width:260px;
+}
+.right-sub-nevi ul {
+	float:left;
+	width:100%;
+	font:normal 13px/39px FlamaSemicondensedBasic, sans-serif;
+	color:#8e8e8e;
+	text-transform:uppercase;
+}
+.right-sub-nevi ul li {
+	float:left;
+	width:85%;
+	background:url(../images/line.jpg) top left no-repeat;
+	padding-left:30px;
+}
+.right-sub-nevi ul li a {
+	float:left;
+	font:normal 11px/28px FlamaSemicondensedBasic, sans-serif;
+	color:#CCC;
+	clear:both;
+	width:78%;
+	padding-left:45px;
+	background:url(../images/arrow-2.png) no-repeat 13% center;
+}
+.right-sub-nevi ul li a:hover {
+	float:left;
+	font:normal 11px/28px FlamaSemicondensedBasic, sans-serif;
+	color:#FFF;
+	clear:both;
+	text-decoration:none;
+	background:url(../images/arrow-2.png) no-repeat 13% center;
+}
+.right-sub-nevi .active, .right-sub-nevi .active:hover {
+	float:left;
+	font:normal 11px/28px FlamaSemicondensedBasic, sans-serif;
+	color:#FFF;
+	clear:both;
+	text-decoration:none;
+	background:url(../images/arrow-2.png) no-repeat 13% center;
+}
+.right-sub-nevi .active a {
+	padding-left:45px;
+}
+.hrline {
+	background: url("../images/hrline.jpg") repeat-x scroll left bottom transparent;
+	float: left;
+	margin-top:10px;
+	padding-bottom: 5px;
+	width: 99%;
+}
+.container-pro-div {
+	float:left;
+	width:968px;
+	background:#f4f4f4 url(../images/products-bg.jpg) repeat;
+	border:10px solid #FFF;
+	outline:1px solid #ccc;
+	margin:1px 1px 20px 1px;
+}
+.product-block-contant {
+	float:left;
+	width:97%;
+	padding:15px;
+}
+.product-main {
+	width: 368px;
+	margin-top: 40px;
+}
+.product-main img {
+	border: 5px solid #FFFFFF;
+	display: block;
+	float: left;
+	outline: 1px solid #D2D5DC;
+}
+.product-main a {
+	color: #444444;
+	clear: both;
+	padding: 10px 0;
+	float: left;
+	font: bold 16px/20px FlamaSemicondensedBook, sans-serif;
+	margin-left: 5px;
+	text-transform: uppercase;
+}
+.product-main a:hover {
+	color: #3FA0CB;
+	padding: 10px 0;
+	float: left;
+	font: bold 16px/20px FlamaSemicondensedBook, sans-serif;
+	margin-left: 5px;
+	text-transform: uppercase;
+}
+.product-main span {
+	width: 368px;
+	padding-left: 5px;
+	float: left;
+	margin-bottom: 20px;
+}
+.projects {
+	width:204px;
+	float:left;
+	margin-right:40px;
+	margin-bottom:40px;
+}
+.projects h4 {
+	float:left;
+	margin-left:5px;
+	font:bold 16px/20px FlamaSemicondensedBook, sans-serif;
+	color:#444444;
+	text-transform:uppercase;
+}
+.projects p {
+	float:left;
+	width:200px;
+	margin-left:5px;
+	font:normal 13px/18px FlamaSemicondensedBasic, sans-serif;
+	color:#767676;
+	margin-top:7px;
+}
+.portfolio-item-preview {
+	float:left;
+	position:relative;
+	width:204px;
+	margin-bottom:10px;
+}
+.portfolio-item-preview img {
+	float:left;
+	display:block;
+	border:5px solid #FFF;
+	outline:1px solid #d2d5dc;
+}
+.preview-options {
+	float:left;
+	background-color:#6f6e6c;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	top:0;
+	display:none
+}
+.preview-options .lightbox {
+	display:block;
+	position:absolute;
+	bottom:60px;
+	right:88px;
+	width:26px;
+	height:26px;
+	background:url(../images/bg-portfolio-preview-options.png) no-repeat 0 0;
+	text-indent:-9999px;
+	cursor:pointer;
+	opacity:0.8
+}
+.preview-options .view {
+	display:block;
+	position:absolute;
+	bottom:10px;
+	right:10px;
+	width:28px;
+	height:26px;
+	background:url(../images/bg-portfolio-preview-options.png) no-repeat 0 -82px;
+	text-indent:-9999px;
+	cursor:pointer;
+	opacity:0.8
+}
+.preview-options .lightbox:hover, .preview-options .view:hover {
+	opacity:1
+}
+.pro-detail {
+	float:left;
+	width:664px;
+	margin-top:10px;
+}
+.pro-detail h4 {
+	border-bottom: 1px solid #CCCCCC;
+	color: #419FCB;
+	float: left;
+	font: 300 18px/20px FlamaSemicondensedBold, sans-serif;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+	width: 99%;
+}
+.pro-detail p {
+	float:left;
+	width:98%;
+	margin-left:5px;
+	font:normal 13px/18px FlamaSemicondensedBasic, sans-serif;
+	color:#767676;
+	margin-top:7px;
+	margin-bottom:15px;
+}
+.pro-detail b {
+	font-weight:normal;
+	color:#333;
+}
+.pro-detail span {
+	float:left;
+	width:100%;
+	font:bold 14px/20px FlamaSemicondensedBasic, sans-serif;
+	color:#000;
+}
+.sidemenuactive {
+	font:normal 14px FlamaSemicondensedBook;
+	color:#FFF !important;
+	line-height:20px;
+	display:block;
+	text-decoration:none;
+}
+div.slideshow img {
+	border: 5px solid #FFFFFF;
+	float: left;
+	outline: 1px solid #D2D5DC;
+	margin-top:15px;
+}
+.fulldiv {
+	float:left;
+	width:100%;
+	padding:5px 0px;
+}
+.contactform {
+	float: left;
+	padding: 10px 0;
+	width: 80%;
+}
+.textbox-con {
+	float:left;
+	width:200px;
+	height:25px;
+	border:1px solid #b5b5b5;
+	margin:0px;
+	padding:0;
+	color:#666;
+	float:right
+}
+.conform_form h2 {
+	color: #666666;
+	float: left;
+	font-family: 'FlamaSemicondensedBook';
+	font-size: 13px;
+	font-weight: normal;
+	margin: 3px 0 0;
+	padding: 0;
+	text-align: right;
+	width: 68%;
+}
+.form-text {
+	float:left;
+	width:33%;
+	text-align:right;
+	font:normal 15px/22px FlamaSemicondensedBook, Geneva, sans-serif;
+	color:#000;
+}
+.right-textbox {
+	float:left;
+	width:66%;
+	margin-left:1%;
+}
+.textarea-con {
+	float:left;
+	width:100%;
+	text-align:left;
+	padding:6px;
+	color:#333;
+	font:normal 12px/16px 'FlamaSemicondensedBook';
+	border:1px solid #cdcccc;
+}
+.address {
+	float:left;
+	margin:30px 0px 30px 30px;
+	width:80%;
+}
+.address h4 {
+	float:left;
+	width:100%;
+	color:#FFF;
+	float:left;
+	font-family:'FlamaSemicondensedBook';
+	font-size:22px;
+	line-height:22px;
+	font-weight:normal;
+	margin-top:15px;
+}
+.address p {
+	float:left;
+	width:100%;
+	color: #EEE;
+	font: 15px/20px 'FlamaSemicondensedBook';
+}
+.button-contact {
+	background:url(../images/button.png) no-repeat left top;
+	color:#FFF;
+	font:bold 13px Arial, Helvetica, sans-serif;
+	padding:5px 12px;
+	text-shadow:1px 1px 1px #854013;
+	width:83px;
+	height:37px;
+	border:none;
+	cursor:pointer;
+	float:left;
+	margin-left:178px;
+}
+.button-contact:hover {
+	background:url(../images/button-hover.png) repeat-x left top;
+}
+.borderslim {
+	float:left;
+	border:4px solid #FFF;
+	outline:1px solid #DDD;
+	margin:5px 7px;
+}
+table {
+	border:4px solid #fff;
+	outline:1px solid #DDD;
+	border-collapse:collapse;
+	margin-left:5px;
+}
+table th {
+	background-color:#419FCB;
+	color:#fff;
+	border:1px solid #fff;
+	font:bold 17px/25px FlamaSemicondensedBasic, sans-serif;
+	text-align:left;
+}
+table td {
+	background-color:#eee;
+	color:#444;
+	border:1px solid #fff;
+	font:normal 13px/18px FlamaSemicondensedBasic, sans-serif;
+}
+table tr td.even {
+	background:#fff;
+}
+.img-border {
+	border: 5px solid #FFFFFF;
+	outline: 1px solid #D2D5DC;
+}
+/* =============== Mithilesh =================== */
+
+.photodiv {
+	float:left;
+	width:670px;
+}
+.rearmoretext a {
+	color: #3FA0CB !important;
+	font-size: 13px !important;
+	text-transform: none !important;
+	margin-top: 10px;
+}
+.rearmoretext a:hover {
+	color: #5B5B5B !important;
+	font-size: 13px !important;
+	text-transform: none !important;
+	margin-top: 10px;
+}
+.img-border-new {
+	border: 3px solid #fff;
+	outline: 1px solid #D2D5DC;
+}

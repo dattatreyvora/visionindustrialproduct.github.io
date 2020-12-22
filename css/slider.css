@@ -1,0 +1,77 @@
+
+/* SLIDESHOW
+------------------------------------------------------*/
+#slideshow{
+	width:992px;
+	height:338px;
+	float:left;
+}
+
+/* Slideshow Type 1 */
+.slide-type1 h1{
+	width:420px;
+	font:normal 39px/33px FlamaSemicondensedUltralight, sans-serif; color:#3e93b8;
+	margin:3px 0px 8px 15px;
+	color:#000;
+	float:left;
+}
+.slide-type1 h3{
+	width:420px;
+	font:normal 13px/16px FlamaSemicondensedBasic, sans-serif; color:#000;
+	margin:60px 0px 3px 15px;
+	color:#000;
+	float:left;
+}
+.slide-type1 p{
+	width:270px;
+	font:normal 13px/16px FlamaSemicondensedBasic, sans-serif;
+	margin-left:15px;
+	color:#979797;
+	float:left;
+}
+.slide-img-left{
+	width:353px;
+	margin:0px 0px 0px 15px;
+	float:left;
+}
+
+.button {
+    background-image: url(../images/view-product-buttons.png);
+    background-repeat: no-repeat;
+	width:119px;
+	height:33px;
+    color: #c1c1c1 !important;
+    display: inline-block;
+    font-size: 13px;
+    padding: 7px 0px 0px 27px;	text-decoration:none;
+}
+
+.slide-button-left{
+	margin:10px 0px 0px 30px;
+	float:left;
+	}
+
+/* Pager */
+#pager{
+    float: right;
+    margin: 0;
+    position: absolute;
+    right: 0px;
+    top: 292px;
+}
+#pager a{
+	background: url(../images/slidenav.png) no-repeat;
+	display:inline-block;
+	font-size:0px;
+	width:20px;
+	height:20px;
+	margin:11px 4px 0px 4px;
+	outline-style:none;
+	outline-width:medium;
+	text-indent:-9999px;
+}
+#pager .activeSlide{
+	background: url(../images/slidenav-active.png) no-repeat;
+}
+
+.orange-text {font: 39px/33px FlamaSemicondensedUltralight,sans-serif; color:#f99c3c;}
